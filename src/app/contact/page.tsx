@@ -1,7 +1,7 @@
 import React from "react";
 import TopBar from "../components/navbar";
 import Header from "../components/header";
-
+import Image from "next/image";
 const Contact: React.FC = () => {
   return (
     <div className="bg-gray-50 text-gray-800">
@@ -117,10 +117,12 @@ const Contact: React.FC = () => {
 
           {/* Illustration */}
           <div className="flex items-center justify-center">
-            <img
+            <Image
               src="/contact.jpg"
               alt="Contact Illustration"
               className="w-full max-w-md"
+              width={500}
+              height={500}
             />
           </div>
         </div>

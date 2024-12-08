@@ -1,5 +1,6 @@
 
 import React from "react";
+import Image from "next/image";
 
 const products = [
   {
@@ -51,10 +52,12 @@ function Trending() {
               className="p-4 border border-gray-200 rounded-lg hover:shadow-lg transition-shadow duration-300 bg-gray-100"
             >
               {/* Product Image */}
-              <img
+              <Image
                 src={product.img}
                 alt={product.name}
                 className="rounded-lg w-full h-60 object-cover mb-4"
+                width={500}
+                height={100}
               />
               {/* Product Name */}
               <h2 className="text-black font-medium text-lg mb-2 ml-12">

@@ -3,6 +3,7 @@ import React from "react";
 import { FaHeart, FaShoppingCart } from "react-icons/fa";
 import TopBar from "../components/navbar";
 import Header from "../components/header";
+import Image from "next/image";
 
 const products = [
   {
@@ -128,10 +129,12 @@ export default function Home() {
               className="flex items-start bg-white shadow-lg rounded-lg p-4"
             >
               {/* Product Image */}
-              <img
+              <Image
                 src={product.image}
                 alt={product.name}
                 className="w-36 h-36 object-cover rounded-lg"
+                width={200}
+                height={100}
               />
               {/* Product Details */}
               <div className="ml-6 flex-1">

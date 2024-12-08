@@ -1,5 +1,6 @@
 
 import React from "react";
+import Image from "next/image";
 const categories = ["New Arrival", "Best Seller", "Featured", "Special Offer"];
 const products = [
   {
@@ -65,10 +66,12 @@ function LatestProduct() {
               className="p-4 border border-gray-200 rounded-lg hover:shadow-lg transition-shadow duration-300"
             >
               <div className="flex flex-col items-center text-center">
-                <img
+                <Image
                   src={product.img}
                   alt={product.name}
                   className="rounded-lg w-full h-80 object-cover bg-gray-100 mb-4"
+                  width={300}
+                  height={100}
                 />
                 <h2 className="text-[#FB2E86] font-medium text-lg mb-2">{product.name}</h2>
                 <div className="text-[#151875] text-sm flex justify-center gap-2">
@@ -88,10 +91,12 @@ function LatestProduct() {
               className="p-4 border border-gray-200 rounded-lg hover:shadow-lg transition-shadow duration-300"
             >
               <div className="flex flex-col items-center text-center">
-                <img
+                <Image
                   src={product.img}
                   alt={product.name}
                   className="rounded-lg w-full h-80 object-cover bg-gray-100 mb-4"
+                  width={300}
+                  height={100}
                 />
                 <h2 className="text-[#FB2E86] font-medium text-lg mb-2">{product.name}</h2>
                 <div className="text-[#151875] text-sm flex justify-center gap-2">

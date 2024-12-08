@@ -1,5 +1,6 @@
 
 import React from "react";
+import Image from "next/image";
 
 function Features() {
   return (
@@ -18,10 +19,12 @@ function Features() {
             {/* Box 1 */}
             <div className="p-4 mb-20 bg-gray-100">
               <div className="h-auto flex flex-col items-center text-center">
-                <img
+                <Image
                   alt="Cantilever Chair"
                   className="rounded-lg w-full h-64 object-cover bg-gray-100"
                   src="/chair3.png"
+                  width={500}
+                  height={500}
                 />
                 <div className="w-full mt-4 ">
                   <h2 className="title-font font-medium text-lg text-[#FB2E86]">
@@ -38,10 +41,12 @@ function Features() {
             {/* Box 1 */}
             <div className="p-4 mb-20 bg-gray-100 ">
               <div className="h-auto flex flex-col items-center text-center ">
-                <img
+                <Image
                   alt="Cantilever Chair"
                   className="rounded-lg w-full h-64 object-cover bg-gray-100"
                   src="/chair2.png"
+                  width={500}
+                  height={500}
                 />
                 <div className="w-full mt-4 hover:bg-[#2F1AC4]  ">
                   <h2 className="title-font font-medium text-lg text-[#151875]  hover:text-white hover:font-bold">
@@ -58,10 +63,12 @@ function Features() {
             {/* Box 3 */}
             <div className="p-4 bg-gray-100 mb-20">
               <div className="h-auto flex flex-col items-center text-center">
-                <img
+                <Image
                   alt="Cantilever Chair"
                   className="rounded-lg w-full h-64 object-cover bg-gray-100"
                   src="/chair1.png"
+                  width={500}
+                  height={500}
                 />
                 <div className="w-full mt-4">
                   <h2 className="title-font font-medium text-lg text-[#FB2E86]">
@@ -78,10 +85,12 @@ function Features() {
             {/* Box 4 */}
             <div className="p-4 mb-20 bg-gray-100">
               <div className="h-auto flex flex-col items-center text-center">
-                <img
+                <Image
                   alt="Cantilever Chair"
                   className="rounded-lg w-full h-64 object-cover bg-gray-100"
                   src="/chair.png"
+                  width={500}
+                  height={500}
                 />
                 <div className="w-full mt-4">
                   <h2 className="title-font font-medium text-lg text-[#FB2E86]">
