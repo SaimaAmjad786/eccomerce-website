@@ -1,5 +1,4 @@
 
-import Image from "next/image";
 import TopBar from "../components/navbar";
 import Header from "../components/header";
 
@@ -7,7 +6,7 @@ function AccountPage() {
   return (
     <div>
       <TopBar/>
-      <Header/>
+      <Header />
       <div className="bg-gray-50 min-h-screen">
         {/* Header */}
         <header className="bg-gray-100 py-6">
@@ -21,7 +20,7 @@ function AccountPage() {
 
         {/* Main Section */}
         <main className="container mx-auto px-4 flex flex-col items-center">
-          <div className="bg-white shadow-md rounded-lg p-8 mt-12 max-w-md w-full">
+          <div className="bg-white shadow-md rounded-lg p-6 sm:p-8 mt-12 w-full max-w-md">
             <h2 className="text-xl font-semibold text-center text-gray-800">
               Login
             </h2>
@@ -34,12 +33,14 @@ function AccountPage() {
               <input
                 type="email"
                 placeholder="Email Address"
-                className="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-pink-400"
+                className="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-pink-400 focus:outline-none"
+                required
               />
               <input
                 type="password"
                 placeholder="Password"
-                className="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-pink-400"
+                className="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-pink-400 focus:outline-none"
+                required
               />
               <div className="text-right">
                 <a
@@ -63,15 +64,8 @@ function AccountPage() {
               </a>
             </p>
           </div>
-          <Image
-            src="/images/image1174.png"
-            alt="logos"
-            width={700}
-            height={300}
-          />
         </main>
       </div>
-      
     </div>
   );
 }
