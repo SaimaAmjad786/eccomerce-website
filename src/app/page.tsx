@@ -1,5 +1,4 @@
 import React from 'react';
-import Features from './components/features';
 import Latestproduct from './components/latestproduct';
 import TopBar from './components/navbar';
 import Services from './components/services';
@@ -10,6 +9,7 @@ import Trending from './components/trending';
 import Discountitem from './components/discountitem';
 import Category from './components/category';
 import Blog from './components/blog';
+import Features from './components/category';
 
 function page() {
   return (
@@ -23,7 +23,7 @@ function page() {
      <Services/>
      <Trendingproduct/>
      <Trending/>
-      {/* <Further/>  */}
+   
      <Discountitem/>
      <Category/>
      <Blog/>

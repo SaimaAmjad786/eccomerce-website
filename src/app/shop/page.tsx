@@ -172,7 +172,7 @@ export default function Home() {
                       <span className="text-sm">Wishlist</span>
                     </button>
                     <button className="flex items-center text-gray-600 hover:text-blue-500">
-                      <FaShoppingCart size={16} className="mr-1" />
+                    <FaShoppingCart size={16} className="mr-1" />
                       <span className="text-sm">Add to Cart</span>
                     </button>
                   </div>

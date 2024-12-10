@@ -84,7 +84,7 @@ const TopBar = () => {
           </a>
 
           {/* Cart */}
-          <a href="/cart" className="cursor-pointer hover:text-gray-200">
+          <a href="/card" className="cursor-pointer hover:text-gray-200">
             <FaShoppingCart />
           </a>
         </div>
