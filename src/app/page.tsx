@@ -10,6 +10,8 @@ import Discountitem from './components/discountitem';
 import Category from './components/category';
 import Blog from './components/blog';
 import Features from './components/category';
+import OffersSection from './components/offer';
+
 
 function page() {
   return (
@@ -23,7 +25,7 @@ function page() {
      <Services/>
      <Trendingproduct/>
      <Trending/>
-   
+     <OffersSection/>
      <Discountitem/>
      <Category/>
      <Blog/>

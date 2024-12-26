@@ -19,23 +19,24 @@ function Header() {
           <div>
             {/* logo */}
             <h2 className="title-font font-extrabold text-blue-950 tracking-widest text-xl mb-3">
-        Hekto
-        </h2>
+              Hekto
+            </h2>
           </div>
 
           {/* links - animated sliding nav */}
           <div
-            className={`${
-              open ? "translate-x-0" : "-translate-x-full"
-            } md:flex md:translate-x-0 md:static w-[50%] md:w-auto bg-gray-800 md:bg-transparent absolute top-0 left-0 h-screen md:h-auto z-40 transition-transform duration-500 ease-in-out`}
+            className={`${open ? "translate-x-0" : "-translate-x-full"
+              } md:flex md:translate-x-0 md:static w-[50%] md:w-auto bg-gray-800 md:bg-transparent absolute top-0 left-0 h-screen md:h-auto z-40 transition-transform duration-500 ease-in-out`}
           >
             <ul className='flex flex-col md:flex-row md:gap-x-2 lg:gap-x-5 xl:gap-x-5 2xl:gap-x-10 sm:text-md md:text-sm lg:text-md xl:text-md text-white md:text-black '>
               <li className='p-4 hover:underline hover:text-pink-600 underline-offset-2'>
                 <Link href="/">Home</Link>
               </li>
-              <li className='p-4 hover:underline  hover:text-pink-600 underline-offset-2'>
+               <li className='p-4 hover:underline  hover:text-pink-600 underline-offset-2'>
                 <Link href="/product">Pages</Link>
-              </li>
+                
+              </li>  
+
               <li className='p-4 hover:underline  hover:text-pink-600 underline-offset-2'>
                 <Link href="/productcard">Products</Link>
               </li>
@@ -46,8 +47,10 @@ function Header() {
                 <Link href="/about">About</Link>
               </li>
               <li className='p-4 hover:underline  hover:text-pink-600 underline-offset-2'>
-                <Link href="/shop">Shop</Link>
+                <Link href="/shop">Shop
+                </Link>
               </li>
+
               <li className='p-4 hover:underline  hover:text-pink-600 underline-offset-2'>
                 <Link href="/contact">Contact</Link>
               </li>
@@ -83,3 +86,124 @@ function Header() {
 }
 
 export default Header;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// "use client";
+
+// import Link from "next/link";
+// import { useState } from "react";
+// import { IoSearch } from "react-icons/io5";
+
+// function Header() {
+//   const [open, setOpen] = useState(false);  // For mobile menu toggle
+//   const [dropdownOpen, setDropdownOpen] = useState(false); // For pages dropdown menu
+
+//   const toggle = () => {
+//     setOpen(!open);  // Toggle the mobile menu visibility
+//   };
+
+//   return (
+//     <main className="border-b-2 bg-neutral-100">
+//       <div className="w-full flex items-center justify-center bg-white h-[70px]">
+//         {/* Main Content */}
+//         <div className="sm:w-full md:w-[80%] flex items-center justify-between h-[50px]">
+
+//           {/* Logo */}
+//           <div>
+//             <h2 className="title-font font-extrabold text-blue-950 tracking-widest text-xl mb-3">
+//               Hekto
+//             </h2>
+//           </div>
+
+//           {/* Navbar Links */}
+//           <div
+//             className={`${
+//               open ? "translate-x-0" : "-translate-x-full"
+//             } md:flex md:translate-x-0 md:static w-[50%] md:w-auto bg-gray-800 md:bg-transparent absolute top-0 left-0 h-screen md:h-auto z-40 transition-transform duration-500 ease-in-out`}
+//           >
+//             <ul className="flex flex-col md:flex-row md:gap-x-2 lg:gap-x-5 xl:gap-x-5 2xl:gap-x-10 sm:text-md md:text-sm lg:text-md xl:text-md text-white md:text-black">
+
+//               <li className="p-4 hover:underline hover:text-pink-600 underline-offset-2">
+//                 <Link href="/">Home</Link>
+//               </li>
+
+//               {/* Pages Dropdown */}
+//               <li className="relative p-4 hover:underline hover:text-pink-600 underline-offset-2">
+//                 <button
+//                   onClick={() => setDropdownOpen(!dropdownOpen)} // Toggle dropdown visibility
+//                   className="focus:outline-none"
+//                 >
+//                   Pages
+//                 </button>
+//                 {/* Dropdown Menu with Links */}
+//                 {dropdownOpen && (
+//                   <div className="absolute bg-pink-100 text-black p-4 rounded-md top-12 left-0 w-56 md:w-auto md:top-0 md:left-0 md:flex flex-col gap-2 z-10">
+//                     <Link href="/shop" className="block hover:text-pink-600">Shop</Link>
+//                     <Link href="/wishlist" className="block hover:text-pink-600">Card</Link>
+//                   </div>
+//                 )}
+//               </li>
+
+//               <li className="p-4 hover:underline hover:text-pink-600 underline-offset-2">
+//                 <Link href="/productcard">Products</Link>
+//               </li>
+//               <li className="p-4 hover:underline hover:text-pink-600 underline-offset-2">
+//                 <Link href="/blog">Blog</Link>
+//               </li>
+//               <li className="p-4 hover:underline hover:text-pink-600 underline-offset-2">
+//                 <Link href="/about">About</Link>
+//               </li>
+//               <li className="p-4 hover:underline hover:text-pink-600 underline-offset-2">
+//                 <Link href="/product">Shop</Link>
+//               </li>
+//               <li className="p-4 hover:underline hover:text-pink-600 underline-offset-2">
+//                 <Link href="/contact">Contact</Link>
+//               </li>
+
+//             </ul>
+//           </div>
+
+//           {/* Search Bar and Mobile Toggle Button */}
+//           <div className="flex gap-x-4 items-center">
+//             {/* Search bar - hidden on small screens */}
+//             <div className="hidden lg:flex w-full bg-gray-200 rounded-md items-center">
+//               <input
+//                 className="w-full p-1 rounded-md bg-gray-200 outline-none"
+//                 type="search"
+//                 placeholder="Search..."
+//               />
+//               <IoSearch className="text-xl ml-3 bg-pink-600 px-1 py-1 text-white" />
+//             </div>
+
+//             {/* Mobile Menu Toggle Button */}
+//             <button
+//               className="text-black block md:hidden text-3xl z-50"
+//               onClick={toggle}
+//             >
+//               {open ? "✖" : "☰"}
+//             </button>
+//           </div>
+//         </div>
+//       </div>
+//     </main>
+//   );
+// }
+
+// export default Header;
