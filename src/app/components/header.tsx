@@ -201,6 +201,9 @@ function Header() {
                 <Link href="/card"  className="block hover:text-pink-600" onClick={closeMobileMenu}>
                   Card
                 </Link>
+                <Link href="/faq"  className="block hover:text-pink-600" onClick={closeMobileMenu}>
+                  Faq
+                </Link>
                   </div>
                 )}
               </li>
