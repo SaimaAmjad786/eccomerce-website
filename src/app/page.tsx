@@ -11,6 +11,7 @@ import Category from './components/category';
 import Blog from './components/blog';
 import Features from './components/category';
 import OffersSection from './components/offer';
+import Featureproduct from './components/featureproduct';
 
 
 function page() {
@@ -20,7 +21,7 @@ function page() {
   <TopBar/>
      <Header/> 
      <HeroSection/>
-     <Features/>
+     <Featureproduct/>
      <Latestproduct/>
      <Services/>
      <Trendingproduct/>

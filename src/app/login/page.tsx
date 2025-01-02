@@ -1,8 +1,9 @@
-import Link from "next/link";
-import TopBar from "../components/navbar";
-import Header from "../components/header";
 
-function AccountPage() {
+import Link from 'next/link';
+import TopBar from '../components/navbar';
+import Header from '../components/header';
+
+function Login() {
   return (
     <div>
       <TopBar />
@@ -11,9 +12,9 @@ function AccountPage() {
         {/* Header */}
         <header className="bg-gray-100 py-6">
           <div className="container mx-auto px-4">
-            <h1 className="text-2xl font-bold text-blue-900">My Account</h1>
+            <h1 className="text-2xl font-bold text-blue-900">Login</h1>
             <p className="text-sm text-gray-500">
-              Home / Pages / <span className="text-pink-500">My Account</span>
+              Home / Pages / <span className="text-pink-500">Login</span>
             </p>
           </div>
         </header>
@@ -49,11 +50,7 @@ function AccountPage() {
                   placeholder="Password"
                   className="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-pink-400"
                 />
-                <div className="text-right">
-                  <Link href="/forgot-password">
-                    <li className="text-sm text-gray-500 hover:text-pink-500">Forgot your password?</li>
-                  </Link>
-                </div>
+                  
                 <button
                   type="submit"
                   className="bg-pink-500 text-white w-full py-3 rounded-lg font-semibold hover:bg-pink-600"
@@ -63,14 +60,16 @@ function AccountPage() {
               </form>
             </section>
             <p className="text-center text-gray-600 text-sm mt-6">
-              Don&apos;t have an account?{" "}
+              Don&apos;t have an account?{' '}
+              <Link href="/signup">
+                <span className="text-pink-500 cursor-pointer">Sign up</span>
+              </Link>
             </p>
           </div>
-          
         </main>
       </div>
     </div>
   );
 }
 
-export default AccountPage;
+export default Login;
